@@ -1,0 +1,73 @@
+.loginbody{
+    background: linear-gradient(black, #fffb00, #ffce0a);
+  }
+  body{
+    background-color: #ffad0a;
+  }
+  .div-login {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 20px; 
+    margin-bottom: 10%;
+    background: linear-gradient(20deg, #000000, #ffad0a);
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 38%;
+  }
+  
+  .div-login-logo {
+    height: 0px;
+    width: 0px;
+    align-self: center;
+  }
+  
+  input {
+    width: 80%;
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: none;
+    font-family: "Open Sans Condensed", sans-serif;
+    margin-top: 4px;
+  }
+  
+  .loginbutton {
+    width: 70%;
+    margin: 5px 0;
+    background-color: dodgerblue;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 5px;
+    font-weight: 900;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    font-size: 23px;
+    margin-top: 5%;
+  }
+  .loginform {
+    margin-left: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    align-items: center;
+  }
+  .loginname {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: bold;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;   
+  }
