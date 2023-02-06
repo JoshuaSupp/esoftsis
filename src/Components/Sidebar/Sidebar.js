@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     FaTh,
     FaBars,
@@ -6,11 +6,14 @@ import {
     FaRegistered,
     FaTable,
     FaTablet,
+    FaLock,
     
 } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = ({children}) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen (!isOpen);
     const menuItem = [
         {
             path:'/Dashboard',
@@ -38,24 +41,30 @@ const Sidebar = ({children}) => {
     name: "PD Registry",
     icon: <FaRegistered/>
 },
+{
+  path:'/',
+  name: "Log Out",
+  icon: <FaLock/>
+},
+
     ]
         
     
   return (
-
+ 
     <div className='container'>
-            <div className='sidebar'>
+            <div style={{width: isOpen ? "180px" : "50px"}} className='sidebar'>
               <div className='topsection'>
-                <h1 className='logo'>Logo</h1>
-                <div className='bars'>
-                    <FaBars/>
+               <img src="./images/smallmeu.png" style={{display: isOpen ? "block" : "none"}} width="30px" height="30px"/>
+                <div style={{marginLeft: isOpen ? "50px" : "0px"}} className='bars'>
+                    <FaBars onClick={toggle}/>
                 </div>
               </div>
               {
                 menuItem.map((item, index)=>(
                     <NavLink to={item.path} key={index} className='link' activeclassName='active'>
                         <div className='icon'>{item.icon}</div>
-                        <div className='link_text'>{item.name}</div>
+                        <div style={{display: isOpen ? "block" : "none"}} className='link_text'>{item.name}</div>
                     </NavLink>
                 ))
               }

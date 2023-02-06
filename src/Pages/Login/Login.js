@@ -3,37 +3,32 @@ import './Login.css'
 
 const Login = () => {
   return (
-    <div id='loginbody'>
-         <div className="div-login">
-        <div className="div-login-logo"></div>
-        <h2 class="loginname">Login</h2>
-        <div>
-          <form class="loginform" onSubmit="">
-            <input
-              type="email"
-              name="email"
-              placeholder="email..."
-              required
-            
-            />
-            <input
-              type="password"
-              name="pwd"
-              placeholder="password..."
-              required
-             
-            /> 
-          </form>
-          <div>
-            <a href='/Dashboard'>
-            <button class="loginbutton"> Log In </button>
-            </a>
-            </div>
+    <div class='login'>
+   
+         <div class="container">
+         <img src='./images/MeuLogo.png' alt='Meulabs Logo' width='120px' height="70px"  />
+  <div class="left">
+  
+    <div class="header">
 
-
-            </div>
-        </div>
+    <h2 class="animation a3" id='meulabs'>Meu Labs</h2>
+      <h2 class="animation a1">Student Information System</h2>
+      <h4 class="animation a2">Log in to your account using username and password</h4>
     </div>
+    <div class="form">
+      <input type="username" class="form-field animation a3" placeholder="Username" />
+      <input type="password" class="form-field animation a4" placeholder="Password" />
+    
+        <a href='/Dashboard'>
+      <button class="animation a6" id="btnlogin">LOGIN</button>
+      </a>
+    
+    </div>
+  </div>
+  <div class="right"></div>
+</div>
+    </div>
+    
   )
 }
 

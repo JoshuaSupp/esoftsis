@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from 'react';
+import Sidebar from '../../Components/Sidebar/Sidebar';
+import './Dashboard.css';
 
 const Dashboard = () => {
   return (
-    <div>
+   
+    <div class="dashboard">
+       <Sidebar>
         <div>
             <img src='./images/MeuLogo.png' alt='Meulabs Logo' width='200px'  />
         </div>
@@ -15,6 +18,7 @@ const Dashboard = () => {
         <div>
             <h2 id='events'>Meu Labs Events</h2>
         </div>
+        </Sidebar>
     </div>
   )
 }
