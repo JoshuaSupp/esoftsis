@@ -1,0 +1,50 @@
+#kxtable #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#kxtable #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+#kxtable #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#kxtable #customers tr:hover {background-color: #ddd;}
+
+#kxtable #customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#kxtable input{
+    display: inline-block;
+}
+
+#checkbox{
+    margin-left: 5%;
+    width: 15px;
+    height: 15px;
+    transform : scale(2);
+}
+
+#check1{
+    margin-left: 2%;
+    width: 15px;
+    height: 15px;
+    transform : scale(2);
+}
+
+#attendance{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#headings{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}

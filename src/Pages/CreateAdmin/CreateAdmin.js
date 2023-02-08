@@ -6,7 +6,7 @@ const CreateAdmin = () => {
   return (
     <div>
     <Sidebar>
-    <div>CreateAdmin</div>
+    
 
     <div class="login-box">
   <h2>Create Admin</h2>

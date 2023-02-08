@@ -6,7 +6,7 @@ const Admin = () => {
   return (
     <div class="admin">
         <Sidebar>
-    <div>Admin</div>
+    
 
     <div id='admintable'>
     <table id="customers">
